@@ -1,16 +1,16 @@
-# CI/CD Automation
+# Developer Experience
 
-This module adds advanced CI/CD automation capabilities to ForgeJo Actions.
+This module adds improvements for developer workflow and code review.
 
 ## Features
 
 | # | Feature | Description |
 |---|---------|-------------|
-| 1 | Matrix builds | Multiple combinations in one workflow |
-| 2 | Scheduled workflows | Cron-based workflow triggers |
-| 3 | Reusable workflows | DRY principle for workflows |
-| 4 | Composite actions | Create custom reusable actions |
-| 5 | Artifacts retention policies | Auto-cleanup old artifacts |
+| 1 | Inline code comments | Comment on specific lines in PR |
+| 2 | Draft PRs | Work in progress PRs |
+| 3 | PR auto-complete | Auto-merge when checks pass |
+| 4 | CODEOWNERS improvements | Enhanced CODEOWNERS |
+| 5 | Review assignment | Auto-assign reviewers |
 
 ## Getting Started
 
@@ -22,17 +22,13 @@ ls stubs/
 ## Architecture
 
 ```
-cicd-automation/
+devexp/
 ├── proposals/     # Feature specifications
 ├── stubs/       # Code placeholders
 └── README.md    # This file
 ```
 
-## ForgeJo Actions
-
-See [ForgeJo Actions Documentation](https://forgejo.org/docs/latest/actions/)
-
 ## See Also
 
-- [GitHub Actions](https://docs.github.com/en/actions)
-- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
+- [ForgeJo PR Documentation](https://forgejo.org/docs/latest/usage/pull/)
+- [GitHub CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
