@@ -1,48 +1,34 @@
-# SourceHub
+# Developer Experience
 
-Extensions and enhancements for ForgeJo - a self-hosted Git service.
+This module adds improvements for developer workflow and code review.
 
-## Overview
+## Features
 
-SourceHub adds 30 new features to ForgeJo across 6 categories:
-
-- **API & Integrations** - GraphQL, Streaming API, Webhooks v2, OIDC
-- **CI/CD Automation** - Matrix builds, Scheduled workflows, Composite actions
-- **Developer Experience** - Inline comments, Draft PRs, Review assignment
-- **Project Management** - Sprints, Epics, Custom statuses, Issue voting
-- **Registry & Packages** - Container Registry, Vulnerability scanning, Dependabot
-- **Security & Compliance** - Audit UI, Secret scanning, IP allowlist
+| # | Feature | Description |
+|---|---------|-------------|
+| 1 | Inline code comments | Comment on specific lines in PR |
+| 2 | Draft PRs | Work in progress PRs |
+| 3 | PR auto-complete | Auto-merge when checks pass |
+| 4 | CODEOWNERS improvements | Enhanced CODEOWNERS |
+| 5 | Review assignment | Auto-assign reviewers |
 
 ## Getting Started
 
 ```bash
-# Clone the project
-git clone https://yourforgejo.instance/sourcehub.git
-cd SourceHub
-
-# Check available branches
-git branch -a
-
-# Checkout a feature branch
-git checkout feature/api-integrations
+ls proposals/
+ls stubs/
 ```
 
-## Branches
+## Architecture
 
-| Branch | Description |
-|--------|-------------|
-| `main` | Main branch |
-| `feature/api-integrations` | API & Integrations features |
-| `feature/cicd-automation` | CI/CD Automation features |
-| `feature/devexp` | Developer Experience features |
-| `feature/project-management` | Project Management features |
-| `feature/registry-packages` | Registry & Packages features |
-| `feature/security-compliance` | Security & Compliance features |
+```
+devexp/
+├── proposals/     # Feature specifications
+├── stubs/       # Code placeholders
+└── README.md    # This file
+```
 
-## Contributing
+## See Also
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-## License
-
-GPL v3 - See [LICENSE](LICENSE) for details.
+- [ForgeJo PR Documentation](https://forgejo.org/docs/latest/usage/pull/)
+- [GitHub CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
