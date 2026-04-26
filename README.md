@@ -1,16 +1,16 @@
-# Developer Experience
+# Project Management
 
-This module adds improvements for developer workflow and code review.
+This module adds advanced project management features for teams.
 
 ## Features
 
 | # | Feature | Description |
 |---|---------|-------------|
-| 1 | Inline code comments | Comment on specific lines in PR |
-| 2 | Draft PRs | Work in progress PRs |
-| 3 | PR auto-complete | Auto-merge when checks pass |
-| 4 | CODEOWNERS improvements | Enhanced CODEOWNERS |
-| 5 | Review assignment | Auto-assign reviewers |
+| 1 | Sprints | Sprint/iteration planning |
+| 2 | Epics | Group issues into epics |
+| 3 | Custom statuses | Customizable Kanban columns |
+| 4 | Issue voting | Community voting |
+| 5 | Time tracking | Estimated vs actual time |
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ ls stubs/
 ## Architecture
 
 ```
-devexp/
+project-management/
 ├── proposals/     # Feature specifications
 ├── stubs/       # Code placeholders
 └── README.md    # This file
@@ -30,5 +30,5 @@ devexp/
 
 ## See Also
 
-- [ForgeJo PR Documentation](https://forgejo.org/docs/latest/usage/pull/)
-- [GitHub CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+- [ForgeJo Issues](https://forgejo.org/docs/latest/usage/issues/)
+- [Agile Methodologies](https://en.wikipedia.org/wiki/Agile_software_development)
