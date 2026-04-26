@@ -1,48 +1,38 @@
-# SourceHub
+# CI/CD Automation
 
-Extensions and enhancements for ForgeJo - a self-hosted Git service.
+This module adds advanced CI/CD automation capabilities to ForgeJo Actions.
 
-## Overview
+## Features
 
-SourceHub adds 30 new features to ForgeJo across 6 categories:
-
-- **API & Integrations** - GraphQL, Streaming API, Webhooks v2, OIDC
-- **CI/CD Automation** - Matrix builds, Scheduled workflows, Composite actions
-- **Developer Experience** - Inline comments, Draft PRs, Review assignment
-- **Project Management** - Sprints, Epics, Custom statuses, Issue voting
-- **Registry & Packages** - Container Registry, Vulnerability scanning, Dependabot
-- **Security & Compliance** - Audit UI, Secret scanning, IP allowlist
+| # | Feature | Description |
+|---|---------|-------------|
+| 1 | Matrix builds | Multiple combinations in one workflow |
+| 2 | Scheduled workflows | Cron-based workflow triggers |
+| 3 | Reusable workflows | DRY principle for workflows |
+| 4 | Composite actions | Create custom reusable actions |
+| 5 | Artifacts retention policies | Auto-cleanup old artifacts |
 
 ## Getting Started
 
 ```bash
-# Clone the project
-git clone https://yourforgejo.instance/sourcehub.git
-cd SourceHub
-
-# Check available branches
-git branch -a
-
-# Checkout a feature branch
-git checkout feature/api-integrations
+ls proposals/
+ls stubs/
 ```
 
-## Branches
+## Architecture
 
-| Branch | Description |
-|--------|-------------|
-| `main` | Main branch |
-| `feature/api-integrations` | API & Integrations features |
-| `feature/cicd-automation` | CI/CD Automation features |
-| `feature/devexp` | Developer Experience features |
-| `feature/project-management` | Project Management features |
-| `feature/registry-packages` | Registry & Packages features |
-| `feature/security-compliance` | Security & Compliance features |
+```
+cicd-automation/
+├── proposals/     # Feature specifications
+├── stubs/       # Code placeholders
+└── README.md    # This file
+```
 
-## Contributing
+## ForgeJo Actions
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+See [ForgeJo Actions Documentation](https://forgejo.org/docs/latest/actions/)
 
-## License
+## See Also
 
-GPL v3 - See [LICENSE](LICENSE) for details.
+- [GitHub Actions](https://docs.github.com/en/actions)
+- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
