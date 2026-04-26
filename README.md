@@ -1,48 +1,34 @@
-# SourceHub
+# Registry & Packages
 
-Extensions and enhancements for ForgeJo - a self-hosted Git service.
+This module adds package registry and vulnerability scanning features.
 
-## Overview
+## Features
 
-SourceHub adds 30 new features to ForgeJo across 6 categories:
-
-- **API & Integrations** - GraphQL, Streaming API, Webhooks v2, OIDC
-- **CI/CD Automation** - Matrix builds, Scheduled workflows, Composite actions
-- **Developer Experience** - Inline comments, Draft PRs, Review assignment
-- **Project Management** - Sprints, Epics, Custom statuses, Issue voting
-- **Registry & Packages** - Container Registry, Vulnerability scanning, Dependabot
-- **Security & Compliance** - Audit UI, Secret scanning, IP allowlist
+| # | Feature | Description |
+|---|---------|-------------|
+| 1 | Container Registry | OCI/Docker image hosting |
+| 2 | Conan support | C++ package manager |
+| 3 | Maven proxy | Proxy for Maven Central |
+| 4 | Vuln scanning | Package vulnerability detection |
+| 5 | Dependabot | Auto-update dependencies |
 
 ## Getting Started
 
 ```bash
-# Clone the project
-git clone https://yourforgejo.instance/sourcehub.git
-cd SourceHub
-
-# Check available branches
-git branch -a
-
-# Checkout a feature branch
-git checkout feature/api-integrations
+ls proposals/
+ls stubs/
 ```
 
-## Branches
+## Architecture
 
-| Branch | Description |
-|--------|-------------|
-| `main` | Main branch |
-| `feature/api-integrations` | API & Integrations features |
-| `feature/cicd-automation` | CI/CD Automation features |
-| `feature/devexp` | Developer Experience features |
-| `feature/project-management` | Project Management features |
-| `feature/registry-packages` | Registry & Packages features |
-| `feature/security-compliance` | Security & Compliance features |
+```
+registry-packages/
+├── proposals/     # Feature specifications
+├── stubs/       # Code placeholders
+└── README.md    # This file
+```
 
-## Contributing
+## See Also
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-## License
-
-GPL v3 - See [LICENSE](LICENSE) for details.
+- [ForgeJo Packages](https://forgejo.org/docs/latest/usage/packages/)
+- [OCI Distribution Spec](https://github.com/opencontainers/distribution-spec)
