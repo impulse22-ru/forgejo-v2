@@ -1,16 +1,16 @@
-# Registry & Packages
+# Security & Compliance
 
-This module adds package registry and vulnerability scanning features.
+This module adds security and compliance features.
 
 ## Features
 
 | # | Feature | Description |
 |---|---------|-------------|
-| 1 | Container Registry | OCI/Docker image hosting |
-| 2 | Conan support | C++ package manager |
-| 3 | Maven proxy | Proxy for Maven Central |
-| 4 | Vuln scanning | Package vulnerability detection |
-| 5 | Dependabot | Auto-update dependencies |
+| 1 | Audit UI | Web interface for audit logs |
+| 2 | Secret scanning | Detect credentials in code |
+| 3 | Code scanning | SAST integration |
+| 4 | IP allowlist | Restrict access by IP |
+| 5 | Security alerts | Vulnerability notifications |
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ ls stubs/
 ## Architecture
 
 ```
-registry-packages/
+security-compliance/
 ├── proposals/     # Feature specifications
 ├── stubs/       # Code placeholders
 └── README.md    # This file
@@ -30,5 +30,5 @@ registry-packages/
 
 ## See Also
 
-- [ForgeJo Packages](https://forgejo.org/docs/latest/usage/packages/)
-- [OCI Distribution Spec](https://github.com/opencontainers/distribution-spec)
+- [ForgeJo Security](https://forgejo.org/docs/latest/security/)
+- [OWASP](https://owasp.org/)
